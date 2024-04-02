@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int thn, int bln, int tgl) {
-                        tanggal.setText(tgl + "-" + (bln + 1) + "-" + thn);
+                        tanggal.setText(thn + "-" + (bln + 1) + "-" + tgl);
                     }
                 }, thn, bln, tgl);
         datePickerDialog.show();
